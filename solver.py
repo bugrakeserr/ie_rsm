@@ -220,3 +220,48 @@ def test_revised_simplex_method():
 
     
 test_revised_simplex_method()
+
+
+def convert_random_instance_to_lp(cost_matrix, supply_arr, demand_arr):
+    # cost_matrix is the cost matrix
+    # supply_arr is the supply array
+    # demand_arr is the demand array
+    # x is the solution vector
+    # z is the objective value
+    # m is the number of constraints
+    # n is the number of variables
+    # B is the set of basic variables
+    # N is the set of nonbasic variables
+    # r is the vector of right-hand side values
+    # q is the entering variable
+    # p is the leaving variable
+    # i is the index of the leaving variable
+    # j is the index of the entering variable
+    m = len(supply_arr) + len(demand_arr)
+    n = len(supply_arr) * len(demand_arr)
+    A = np.zeros((m,m+n))
+    print(A)
+    b = np.zeros(m)
+    c = np.zeros(n)
+    for i in range(len(supply_arr)):
+        for j in range(len(demand_arr)):
+            A[i, i*len(demand_arr) + j] = 1
+            A[j + len(supply_arr), i*len(demand_arr) + j] = 1
+            c[i*len(demand_arr) + j] = cost_matrix[i][j]
+    b[:len(supply_arr)] = supply_arr
+    b[len(supply_arr):] = demand_arr
+    return c, A, b
+
+
+def test_convert_random_instance_to_lp():
+    cost_matrix = np.array([[1, 2, 3],
+                             [4, 5, 6]
+                             ])
+    supply_arr = np.array([3, 5])
+    demand_arr = np.array([4, 2, 2])
+    c, A, b = convert_random_instance_to_lp(cost_matrix, supply_arr, demand_arr)
+    print(c)
+    print(A)
+    print(b)
+
+test_convert_random_instance_to_lp()
