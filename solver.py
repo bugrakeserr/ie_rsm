@@ -5,6 +5,8 @@ import random
 
 M = 1e10
 
+two_phase = False
+
 """# Create the model
 model = LpProblem(name="integer-programming-example", sense=LpMaximize)
 
@@ -111,10 +113,18 @@ def random_instance(supply_nodes, demand_nodes, maximum_cost, maximum_amount):
 def check_artificial_variable(c):
     c_artificial = np.zeros(len(c))
     for i in range(len(c)):
-        if c[i] == -M:
+        if c[i] == -M or c[i] == M:
             two_phase = True
             c_artificial[i] = -1
     return c_artificial
+
+def handle_singular_matrix(matrix):
+    try:
+        inv_matrix = np.linalg.inv(matrix)
+    except np.linalg.LinAlgError:
+        print("Singular matrix detected, using pseudo-inverse.")
+        inv_matrix = np.linalg.pinv(matrix)
+    return inv_matrix
 
 def revised_simplex_method(c, A, b, problem="Max"):
     # c is the cost vector
@@ -147,7 +157,10 @@ def revised_simplex_method(c, A, b, problem="Max"):
     nonbase_matrix = A[:, N]
     base_cost = c[B]
     nonbase_cost = c[N]
-    inv_base = np.linalg.inv(base_matrix)
+    try:
+        inv_base = np.linalg.inv(base_matrix)
+    except:
+        inv_base = handle_singular_matrix(base_matrix)
     optimality_check = np.dot(np.transpose(base_cost), inv_base)
     optimality_check = np.dot(optimality_check, nonbase_matrix) - np.transpose(nonbase_cost)
 
@@ -173,7 +186,10 @@ def revised_simplex_method(c, A, b, problem="Max"):
             nonbase_matrix = A[:, N]
             base_cost = c[B]
             nonbase_cost = c[N]
-            inv_base = np.linalg.inv(base_matrix)
+            try:
+                inv_base = np.linalg.inv(base_matrix)
+            except:
+                inv_base = handle_singular_matrix(base_matrix)
             optimality_check = np.dot(base_cost, inv_base)
             optimality_check = np.dot(optimality_check, nonbase_matrix) - nonbase_cost
 
@@ -209,7 +225,7 @@ def revised_simplex_method(c, A, b, problem="Max"):
 
 
 
-def test_revised_simplex_method():
+"""def test_revised_simplex_method():
     c = np.array([1, 1, 0, 0, -M])
     A = np.array([[2, 5, 0, 1, 0],
                   [1, 1, -1, 0, 1]
@@ -221,8 +237,7 @@ def test_revised_simplex_method():
 
     
 test_revised_simplex_method()
-
-
+"""
 def convert_random_instance_to_lp(cost_matrix, supply_arr, demand_arr):
     # cost_matrix is the cost matrix
     # supply_arr is the supply array
@@ -248,7 +263,7 @@ def convert_random_instance_to_lp(cost_matrix, supply_arr, demand_arr):
         for j in range(len(demand_arr)):
             A[i, i*len(demand_arr) + j] = 1
             A[j + len(supply_arr), i*len(demand_arr) + j] = 1
-            c[i*len(demand_arr) + j] = -1* cost_matrix[i][j]
+            c[i*len(demand_arr) + j] = -1 * cost_matrix[i][j]
     for i in range(m):
         A[i, n + i] = 1
 
@@ -271,6 +286,6 @@ def test_convert_random_instance_to_lp():
     print(b)
 
 
-parametres = random_instance(3, 3, 10, 10)
+parametres = random_instance(8, 10, 100000, 100)
 print(solver(*parametres))
 print(revised_simplex_method(*convert_random_instance_to_lp(*parametres)))
