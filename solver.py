@@ -116,7 +116,7 @@ def check_artificial_variable(c):
             c_artificial[i] = -1
     return c_artificial
 
-def revised_simplex_method(c, A, b):
+def revised_simplex_method(c, A, b, problem="Max"):
     # c is the cost vector
     # A is the constraint matrix
     # b is the right-hand side vector
@@ -138,6 +138,7 @@ def revised_simplex_method(c, A, b):
         c_two_phase = c
         c = check_artificial_variable(c)
 
+    
 
     m, n = A.shape
     B = np.arange(n-m, n)
@@ -240,14 +241,19 @@ def convert_random_instance_to_lp(cost_matrix, supply_arr, demand_arr):
     m = len(supply_arr) + len(demand_arr)
     n = len(supply_arr) * len(demand_arr)
     A = np.zeros((m,m+n))
-    print(A)
     b = np.zeros(m)
-    c = np.zeros(n)
+    c = np.zeros(m+n)
+    c.fill(-M)
     for i in range(len(supply_arr)):
         for j in range(len(demand_arr)):
             A[i, i*len(demand_arr) + j] = 1
             A[j + len(supply_arr), i*len(demand_arr) + j] = 1
-            c[i*len(demand_arr) + j] = cost_matrix[i][j]
+            c[i*len(demand_arr) + j] = -1* cost_matrix[i][j]
+    for i in range(m):
+        A[i, n + i] = 1
+
+    print(c)
+
     b[:len(supply_arr)] = supply_arr
     b[len(supply_arr):] = demand_arr
     return c, A, b
@@ -264,4 +270,7 @@ def test_convert_random_instance_to_lp():
     print(A)
     print(b)
 
-test_convert_random_instance_to_lp()
+
+parametres = random_instance(3, 3, 10, 10)
+print(solver(*parametres))
+print(revised_simplex_method(*convert_random_instance_to_lp(*parametres)))
