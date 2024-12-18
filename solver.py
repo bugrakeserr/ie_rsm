@@ -186,8 +186,11 @@ def revised_simplex_method(c, A, b, problem="Max"):
         d = np.dot(inv_base, nonbase_matrix[:, j])
 
         rhs = np.dot(inv_base, b)
+        #check infeasibility
+        if np.any(rhs < 0):
+            return "Infeasible", None, None
         if np.all(d <= 0):
-            return "Unbounded"
+            return "Unbounded", None, None
         else:
             theta = 1e10
             for i in range(m):
@@ -236,9 +239,9 @@ def revised_simplex_method(c, A, b, problem="Max"):
 
     
     if problem == "Max":
-        return optimal_value, x
+        return "Optimal", optimal_value, x
     else:
-        return -optimal_value, x
+        return "Optimal", -optimal_value, x
 
 
 
@@ -301,6 +304,16 @@ def test_convert_random_instance_to_lp():
     print(A)
     print(b)
 
+
+#create an unbounded problem
+"""c = np.array([1, 1, 0, 0])
+A = np.array([[1, 0, 1, 0],
+                [0, -1, 0, 1]])
+b = np.array([-5, -5])
+print(revised_simplex_method(c, A, b))"""
+
+
+
 test_by_output_file = False   # Set this to True to test by writing to an output file
 if test_by_output_file:
     output_file = open("output.txt", "w")
@@ -321,7 +334,7 @@ if test_by_output_file:
         output_file.write(f"Time taken by Solver: {time_end - time_start}\n")
         c, A, b = convert_random_instance_to_lp(cost_matrix, supply_arr, demand_arr)
         time_start = time.time()
-        optimal_value, x = revised_simplex_method(c, A, b, "Min")
+        _, optimal_value, x = revised_simplex_method(c, A, b, "Min")
         time_end = time.time()
         output_file.write(f"Revised Simplex Method's Optimal Value is: {optimal_value}\n")
         output_file.write(f"Time taken by Revised Simplex Method: {time_end - time_start}\n")
@@ -340,7 +353,7 @@ else:
         solver_time = time_end - time_start
         c, A, b = convert_random_instance_to_lp(cost_matrix, supply_arr, demand_arr)
         time_start = time.time()
-        optimal_value, x = revised_simplex_method(c, A, b, "Min")
+        _, optimal_value, x = revised_simplex_method(c, A, b, "Min")
         time_end = time.time()
         print(f"Problem Instance {i + 1}:\n")
         print(f"Solver's objective value is: {objective_solver}")
