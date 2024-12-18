@@ -131,15 +131,6 @@ def check_artificial_variable(c, two_phase=False):
             c_artificial[i] = -1
     return two_phase, c_artificial
 
-def handle_singular_matrix(matrix):
-    try:
-        inv_matrix = np.linalg.inv(matrix)
-    except np.linalg.LinAlgError:
-        print("Singular matrix detected, using pseudo-inverse.")
-        inv_matrix = np.linalg.pinv(matrix)
-    return inv_matrix
-
-
 def elementary_row_operations(matrix, d, p):
     m, n = matrix.shape
     for i in range(m):
@@ -217,6 +208,9 @@ def revised_simplex_method(c, A, b, problem="Max"):
     x[B] = rhs
     #concatenate two matrices
     if two_phase:
+        #check if optimal value is zero
+        if optimal_value != 0:
+            return "Infeasible", None, None
         identity_matrix = np.identity(len(B))
         non_basic = np.dot(inv_base, nonbase_matrix)
         indices = []
