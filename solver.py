@@ -173,6 +173,8 @@ def revised_simplex_method(c, A, b, problem="Max"):
         c_two_phase = c
         c, two_phase = check_artificial_variable(c)
 
+    if problem == "Min":
+        c = -c
     
 
     m, n = A.shape
@@ -190,7 +192,7 @@ def revised_simplex_method(c, A, b, problem="Max"):
         d = np.dot(inv_base, nonbase_matrix[:, j])
 
         rhs = np.dot(inv_base, b)
-        if np.all(d <= 0):
+        if np.all(d <= 1e-10):
             return "Unbounded"
         else:
             theta = 1e10
@@ -200,7 +202,7 @@ def revised_simplex_method(c, A, b, problem="Max"):
                     if(theta == rhs[i] / d[i]):
                         p = i
             q = B[p]
-            B[p] = j
+            B[p] = N[j]
             N[j] = q
             base_matrix = A[:, B]
             nonbase_matrix = A[:, N]
