@@ -63,9 +63,6 @@ def solver(cost_matrix, supply_arr, demand_arr):
     solver = PULP_CBC_CMD(msg=False)
     status = model.solve(solver)
     
-    # Print the optimal objective value
-    print(f"Solver's Objective Value: {model.objective.value()}")
-    
     # Print the values of the decision variables
     """for i in range(len(cost_matrix)):
         for j in range(len(cost_matrix[i])):
@@ -304,27 +301,51 @@ def test_convert_random_instance_to_lp():
     print(A)
     print(b)
 
-#create an output file
-output_file = open("output.txt", "w")
-for i in range(100):
-    supply_nodes = random.randint(10, 150)
-    demand_nodes = random.randint(10, 150)
-    maximum_cost = random.randint(500, 20000)
-    maximum_amount = random.randint(100, 2000)
-    output_file.write(f"Supply Nodes: {supply_nodes}\n")
-    output_file.write(f"Demand Nodes: {demand_nodes}\n")
-    output_file.write(f"Maximum Cost: {maximum_cost}\n")
-    output_file.write(f"Maximum Amount: {maximum_amount}\n")
-    cost_matrix, supply_arr, demand_arr = random_instance(supply_nodes, demand_nodes, maximum_cost, maximum_amount)
-    time_start = time.time()
-    objective_solver = solver(cost_matrix, supply_arr, demand_arr)
-    time_end = time.time()
-    output_file.write(f"Solver's objective value is: {objective_solver}\n")
-    output_file.write(f"Time taken by Solver: {time_end - time_start}\n")
-    c, A, b = convert_random_instance_to_lp(cost_matrix, supply_arr, demand_arr)
-    time_start = time.time()
-    optimal_value, x = revised_simplex_method(c, A, b, "Min")
-    time_end = time.time()
-    output_file.write(f"Revised Simplex Method's Optimal Value is: {optimal_value}\n")
-    output_file.write(f"Time taken by Revised Simplex Method: {time_end - time_start}\n")
-    output_file.write("--------------------------\n\n")
+test_by_output_file = False   # Set this to True to test by writing to an output file
+if test_by_output_file:
+    output_file = open("output.txt", "w")
+    for i in range(100):
+        supply_nodes = random.randint(10, 150)
+        demand_nodes = random.randint(10, 150)
+        maximum_cost = random.randint(500, 20000)
+        maximum_amount = random.randint(100, 2000)
+        output_file.write(f"Supply Nodes: {supply_nodes}\n")
+        output_file.write(f"Demand Nodes: {demand_nodes}\n")
+        output_file.write(f"Maximum Cost: {maximum_cost}\n")
+        output_file.write(f"Maximum Amount: {maximum_amount}\n")
+        cost_matrix, supply_arr, demand_arr = random_instance(supply_nodes, demand_nodes, maximum_cost, maximum_amount)
+        time_start = time.time()
+        objective_solver = solver(cost_matrix, supply_arr, demand_arr)
+        time_end = time.time()
+        output_file.write(f"Solver's objective value is: {objective_solver}\n")
+        output_file.write(f"Time taken by Solver: {time_end - time_start}\n")
+        c, A, b = convert_random_instance_to_lp(cost_matrix, supply_arr, demand_arr)
+        time_start = time.time()
+        optimal_value, x = revised_simplex_method(c, A, b, "Min")
+        time_end = time.time()
+        output_file.write(f"Revised Simplex Method's Optimal Value is: {optimal_value}\n")
+        output_file.write(f"Time taken by Revised Simplex Method: {time_end - time_start}\n")
+        output_file.write("--------------------------\n\n")
+        
+else:
+    for i in range(100):
+        supply_nodes = random.randint(10, 150)
+        demand_nodes = random.randint(10, 150)
+        maximum_cost = random.randint(500, 20000)
+        maximum_amount = random.randint(100, 2000)
+        cost_matrix, supply_arr, demand_arr = random_instance(supply_nodes, demand_nodes, maximum_cost, maximum_amount)
+        time_start = time.time()
+        objective_solver = solver(cost_matrix, supply_arr, demand_arr)
+        time_end = time.time()
+        solver_time = time_end - time_start
+        c, A, b = convert_random_instance_to_lp(cost_matrix, supply_arr, demand_arr)
+        time_start = time.time()
+        optimal_value, x = revised_simplex_method(c, A, b, "Min")
+        time_end = time.time()
+        print(f"Problem Instance {i + 1}:\n")
+        print(f"Solver's objective value is: {objective_solver}")
+        
+        print(f"Time taken by Solver: {solver_time}")
+        print(f"Revised Simplex Method's Optimal Value is: {optimal_value}")
+        print(f"Time taken by Revised Simplex Method: {time_end - time_start}")
+        print("--------------------------\n\n")
