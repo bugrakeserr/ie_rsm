@@ -36,24 +36,41 @@ print(f"Objective Value: {model.objective.value()}")"""
 
 
 def solver(cost_matrix, supply_arr, demand_arr):
+    assert len(cost_matrix) == len(supply_arr), "Number of rows in cost_matrix must match supply_arr"
+    assert len(cost_matrix[0]) == len(demand_arr), "Number of columns in cost_matrix must match demand_arr"
     model = LpProblem(name="transportation_problem", sense=LpMinimize)
-    x_matrix = [[LpVariable(name=f"x{i}{j}", lowBound=0) for j in range(len(cost_matrix[i]))] for i in range(len(cost_matrix))]
+    
+    # Define decision variables
+    x_matrix = [[LpVariable(name=f"x{i}_{j}", lowBound=0) for j in range(len(cost_matrix[i]))] for i in range(len(cost_matrix))]
+
+    # Define the objective function
     objective = lpSum(x_matrix[i][j] * cost_matrix[i][j] for i in range(len(cost_matrix)) for j in range(len(cost_matrix[i])))
     model += objective, "Objective"
+    
+    # Add supply constraints
     for i in range(len(cost_matrix)):
-        model += lpSum(x_matrix[i]) == supply_arr[i], f"Constraint_{i}"
+        constraint_name = f"Supply_Constraint_{i}"
+        constraint = lpSum(x_matrix[i]) == supply_arr[i]
+        model += constraint, constraint_name
+    
+    # Add demand constraints
     for j in range(len(cost_matrix[0])):
-        model += lpSum([x_matrix[i][j] for i in range(len(cost_matrix))]) == demand_arr[j], f"Constraint_{len(cost_matrix) + j}"
-
+        constraint_name = f"Demand_Constraint_{j}"
+        constraint = lpSum([x_matrix[i][j] for i in range(len(cost_matrix))]) == demand_arr[j]
+        model += constraint, constraint_name
+    
+    # Solve the problem
     solver = PULP_CBC_CMD(msg=False)
-    status = solver.solve(model)
+    status = model.solve(solver)
+    
+    # Print the optimal objective value
+    print(f"Objective Value: {model.objective.value()}")
+    
+    # Print the values of the decision variables
     """for i in range(len(cost_matrix)):
         for j in range(len(cost_matrix[i])):
             print(f"x{i}{j} = {x_matrix[i][j].value()}")
-    for i in range(len(cost_matrix)):
-        for j in range(len(cost_matrix[i])):
-            print(f"x{i}{j} = {cost_matrix[i][j]}")"""
- 
+"""
     return model.objective.value()
 
 
@@ -105,18 +122,17 @@ def random_instance(supply_nodes, demand_nodes, maximum_cost, maximum_amount):
             sub_cost_matrix.append(random.randint(1, maximum_cost))
         cost_matrix.append(sub_cost_matrix)
 
-    
 
     return cost_matrix, supply_arr, demand_arr
 
 
-def check_artificial_variable(c):
+def check_artificial_variable(c, two_phase=False):
     c_artificial = np.zeros(len(c))
     for i in range(len(c)):
         if c[i] == -M or c[i] == M:
             two_phase = True
             c_artificial[i] = -1
-    return c_artificial
+    return two_phase, c_artificial
 
 def handle_singular_matrix(matrix):
     try:
@@ -125,6 +141,15 @@ def handle_singular_matrix(matrix):
         print("Singular matrix detected, using pseudo-inverse.")
         inv_matrix = np.linalg.pinv(matrix)
     return inv_matrix
+
+
+def elementary_row_operations(matrix, d, p):
+    m, n = matrix.shape
+    for i in range(m):
+        if i != p:
+            matrix[i] = matrix[i] - d[i] / d[p] * matrix[p]
+    matrix[p] = matrix[p] / d[p]
+    return matrix
 
 def revised_simplex_method(c, A, b, problem="Max"):
     # c is the cost vector
@@ -146,7 +171,7 @@ def revised_simplex_method(c, A, b, problem="Max"):
     check_artificial_variable(c)
     if two_phase:
         c_two_phase = c
-        c = check_artificial_variable(c)
+        c, two_phase = check_artificial_variable(c)
 
     
 
@@ -157,14 +182,9 @@ def revised_simplex_method(c, A, b, problem="Max"):
     nonbase_matrix = A[:, N]
     base_cost = c[B]
     nonbase_cost = c[N]
-    try:
-        inv_base = np.linalg.inv(base_matrix)
-    except:
-        inv_base = handle_singular_matrix(base_matrix)
+    inv_base = np.linalg.inv(base_matrix)
     optimality_check = np.dot(np.transpose(base_cost), inv_base)
     optimality_check = np.dot(optimality_check, nonbase_matrix) - np.transpose(nonbase_cost)
-
-
     while np.any(optimality_check < 0):
         j = np.argmin(optimality_check)
         d = np.dot(inv_base, nonbase_matrix[:, j])
@@ -186,10 +206,7 @@ def revised_simplex_method(c, A, b, problem="Max"):
             nonbase_matrix = A[:, N]
             base_cost = c[B]
             nonbase_cost = c[N]
-            try:
-                inv_base = np.linalg.inv(base_matrix)
-            except:
-                inv_base = handle_singular_matrix(base_matrix)
+            inv_base = elementary_row_operations(inv_base, d, p)
             optimality_check = np.dot(base_cost, inv_base)
             optimality_check = np.dot(optimality_check, nonbase_matrix) - nonbase_cost
 
@@ -267,7 +284,6 @@ def convert_random_instance_to_lp(cost_matrix, supply_arr, demand_arr):
     for i in range(m):
         A[i, n + i] = 1
 
-    print(c)
 
     b[:len(supply_arr)] = supply_arr
     b[len(supply_arr):] = demand_arr
@@ -286,6 +302,6 @@ def test_convert_random_instance_to_lp():
     print(b)
 
 
-parametres = random_instance(8, 10, 100000, 100)
-print(solver(*parametres))
-print(revised_simplex_method(*convert_random_instance_to_lp(*parametres)))
+cost_matrix, supply_arr, demand_arr = random_instance(120, 120, 10000, 1000)
+print(solver(cost_matrix, supply_arr, demand_arr))
+print(revised_simplex_method(*convert_random_instance_to_lp(cost_matrix, supply_arr, demand_arr)))
