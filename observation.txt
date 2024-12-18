@@ -1,0 +1,400 @@
+Problem Instance 1:
+Objective values match.
+RMS is faster by 0.011217 seconds.
+
+Problem Instance 2:
+Objective values match.
+Solver is faster by 0.366961 seconds.
+
+Problem Instance 3:
+Objective values match.
+Solver is faster by 0.063218 seconds.
+
+Problem Instance 4:
+Objective values match.
+Solver is faster by 0.114179 seconds.
+
+Problem Instance 5:
+Objective values match.
+RMS is faster by 0.013027 seconds.
+
+Problem Instance 6:
+Objective values match.
+Solver is faster by 0.281586 seconds.
+
+Problem Instance 7:
+Objective values match.
+Solver is faster by 0.015899 seconds.
+
+Problem Instance 8:
+Objective values match.
+Solver is faster by 2.264597 seconds.
+
+Problem Instance 9:
+Objective values match.
+Solver is faster by 0.045661 seconds.
+
+Problem Instance 10:
+Objective values match.
+RMS is faster by 0.013284 seconds.
+
+Problem Instance 11:
+Objective values match.
+Solver is faster by 0.186337 seconds.
+
+Problem Instance 12:
+Objective values match.
+RMS is faster by 0.011945 seconds.
+
+Problem Instance 13:
+Objective values match.
+Solver is faster by 1.279744 seconds.
+
+Problem Instance 14:
+Objective values match.
+Solver is faster by 0.030608 seconds.
+
+Problem Instance 15:
+Objective values match.
+RMS is faster by 0.001738 seconds.
+
+Problem Instance 16:
+Objective values match.
+Solver is faster by 0.031293 seconds.
+
+Problem Instance 17:
+Objective values match.
+Solver is faster by 2.442628 seconds.
+
+Problem Instance 18:
+Objective values match.
+Solver is faster by 0.339673 seconds.
+
+Problem Instance 19:
+Objective values match.
+Solver is faster by 0.030599 seconds.
+
+Problem Instance 20:
+Objective values match.
+Solver is faster by 0.007970 seconds.
+
+Problem Instance 21:
+Objective values match.
+Solver is faster by 2.052431 seconds.
+
+Problem Instance 22:
+Objective values match.
+Solver is faster by 0.243282 seconds.
+
+Problem Instance 23:
+Objective values match.
+Solver is faster by 0.109465 seconds.
+
+Problem Instance 24:
+Objective values match.
+Solver is faster by 0.001098 seconds.
+
+Problem Instance 25:
+Objective values match.
+Solver is faster by 1.989766 seconds.
+
+Problem Instance 26:
+Objective values match.
+Solver is faster by 0.071641 seconds.
+
+Problem Instance 27:
+Objective values match.
+Solver is faster by 0.216736 seconds.
+
+Problem Instance 28:
+Objective values match.
+Solver is faster by 0.127160 seconds.
+
+Problem Instance 29:
+Objective values match.
+Solver is faster by 0.061185 seconds.
+
+Problem Instance 30:
+Objective values match.
+Solver is faster by 0.090504 seconds.
+
+Problem Instance 31:
+Objective values match.
+RMS is faster by 0.006011 seconds.
+
+Problem Instance 32:
+Objective values match.
+RMS is faster by 0.014897 seconds.
+
+Problem Instance 33:
+Objective values match.
+Solver is faster by 1.791065 seconds.
+
+Problem Instance 34:
+Objective values match.
+Solver is faster by 0.109680 seconds.
+
+Problem Instance 35:
+Objective values match.
+Solver is faster by 3.312142 seconds.
+
+Problem Instance 36:
+Objective values match.
+Solver is faster by 0.412587 seconds.
+
+Problem Instance 37:
+Objective values match.
+Solver is faster by 0.989012 seconds.
+
+Problem Instance 38:
+Objective values match.
+Solver is faster by 0.441227 seconds.
+
+Problem Instance 39:
+Objective values match.
+Solver is faster by 0.246564 seconds.
+
+Problem Instance 40:
+Objective values match.
+Solver is faster by 0.017653 seconds.
+
+Problem Instance 41:
+Objective values match.
+Solver is faster by 0.038512 seconds.
+
+Problem Instance 42:
+Objective values match.
+Solver is faster by 0.050235 seconds.
+
+Problem Instance 43:
+Objective values match.
+Solver is faster by 0.012177 seconds.
+
+Problem Instance 44:
+Objective values match.
+Solver is faster by 0.978228 seconds.
+
+Problem Instance 45:
+Objective values match.
+Solver is faster by 1.573148 seconds.
+
+Problem Instance 46:
+Objective values match.
+Solver is faster by 0.042094 seconds.
+
+Problem Instance 47:
+Objective values match.
+Solver is faster by 0.218039 seconds.
+
+Problem Instance 48:
+Objective values match.
+Solver is faster by 0.840536 seconds.
+
+Problem Instance 49:
+Objective values match.
+Solver is faster by 0.037130 seconds.
+
+Problem Instance 50:
+Objective values match.
+Solver is faster by 1.393719 seconds.
+
+Problem Instance 51:
+Objective values match.
+Solver is faster by 2.681205 seconds.
+
+Problem Instance 52:
+Objective values match.
+Solver is faster by 0.006481 seconds.
+
+Problem Instance 53:
+Objective values match.
+RMS is faster by 0.007040 seconds.
+
+Problem Instance 54:
+Objective values match.
+RMS is faster by 0.003872 seconds.
+
+Problem Instance 55:
+Objective values match.
+Solver is faster by 1.621027 seconds.
+
+Problem Instance 56:
+Objective values match.
+Solver is faster by 0.858891 seconds.
+
+Problem Instance 57:
+Objective values match.
+Solver is faster by 0.766748 seconds.
+
+Problem Instance 58:
+Objective values match.
+Solver is faster by 0.256919 seconds.
+
+Problem Instance 59:
+Objective values match.
+Solver is faster by 0.042288 seconds.
+
+Problem Instance 60:
+Objective values match.
+Solver is faster by 0.596055 seconds.
+
+Problem Instance 61:
+Objective values match.
+Solver is faster by 0.016102 seconds.
+
+Problem Instance 62:
+Objective values match.
+Solver is faster by 0.116253 seconds.
+
+Problem Instance 63:
+Objective values match.
+Solver is faster by 0.022491 seconds.
+
+Problem Instance 64:
+Objective values match.
+RMS is faster by 0.008372 seconds.
+
+Problem Instance 65:
+Objective values match.
+Solver is faster by 0.365988 seconds.
+
+Problem Instance 66:
+Objective values match.
+Solver is faster by 0.198629 seconds.
+
+Problem Instance 67:
+Objective values match.
+Solver is faster by 0.132417 seconds.
+
+Problem Instance 68:
+Objective values match.
+Solver is faster by 0.109590 seconds.
+
+Problem Instance 69:
+Objective values match.
+Solver is faster by 4.134097 seconds.
+
+Problem Instance 70:
+Objective values match.
+Solver is faster by 0.291565 seconds.
+
+Problem Instance 71:
+Objective values match.
+Solver is faster by 0.829950 seconds.
+
+Problem Instance 72:
+Objective values match.
+RMS is faster by 0.008899 seconds.
+
+Problem Instance 73:
+Objective values match.
+Solver is faster by 0.057542 seconds.
+
+Problem Instance 74:
+Objective values match.
+Solver is faster by 3.363057 seconds.
+
+Problem Instance 75:
+Objective values match.
+Solver is faster by 0.308345 seconds.
+
+Problem Instance 76:
+Objective values match.
+Solver is faster by 0.342855 seconds.
+
+Problem Instance 77:
+Objective values match.
+Solver is faster by 0.129912 seconds.
+
+Problem Instance 78:
+Objective values match.
+Solver is faster by 1.473170 seconds.
+
+Problem Instance 79:
+Objective values match.
+Solver is faster by 2.736519 seconds.
+
+Problem Instance 80:
+Objective values match.
+Solver is faster by 0.057341 seconds.
+
+Problem Instance 81:
+Objective values match.
+RMS is faster by 0.010383 seconds.
+
+Problem Instance 82:
+Objective values match.
+Solver is faster by 0.134321 seconds.
+
+Problem Instance 83:
+Objective values match.
+RMS is faster by 0.007959 seconds.
+
+Problem Instance 84:
+Objective values match.
+Solver is faster by 0.198877 seconds.
+
+Problem Instance 85:
+Objective values match.
+Solver is faster by 0.050673 seconds.
+
+Problem Instance 86:
+Objective values match.
+Solver is faster by 0.208901 seconds.
+
+Problem Instance 87:
+Objective values match.
+Solver is faster by 0.280180 seconds.
+
+Problem Instance 88:
+Objective values match.
+Solver is faster by 1.288220 seconds.
+
+Problem Instance 89:
+Objective values match.
+Solver is faster by 0.107398 seconds.
+
+Problem Instance 90:
+Objective values match.
+Solver is faster by 0.100825 seconds.
+
+Problem Instance 91:
+Objective values match.
+Solver is faster by 0.301660 seconds.
+
+Problem Instance 92:
+Objective values match.
+RMS is faster by 0.012559 seconds.
+
+Problem Instance 93:
+Objective values match.
+Solver is faster by 0.053130 seconds.
+
+Problem Instance 94:
+Objective values match.
+Solver is faster by 0.098433 seconds.
+
+Problem Instance 95:
+Objective values match.
+Solver is faster by 0.061153 seconds.
+
+Problem Instance 96:
+Objective values match.
+Solver is faster by 0.300084 seconds.
+
+Problem Instance 97:
+Objective values match.
+Solver is faster by 0.777388 seconds.
+
+Problem Instance 98:
+Objective values match.
+Solver is faster by 0.014115 seconds.
+
+Problem Instance 99:
+Objective values match.
+Solver is faster by 2.231565 seconds.
+
+Problem Instance 100:
+Objective values match.
+Solver is faster by 0.897505 seconds.
+

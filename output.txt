@@ -1,0 +1,1000 @@
+Supply Nodes: 36
+Demand Nodes: 23
+Maximum Cost: 18776
+Maximum Amount: 1067
+Solver's objective value is: 14724262.0
+Time taken by Solver: 0.022532939910888672
+Revised Simplex Method's Optimal Value is: 14724262.0
+Time taken by Revised Simplex Method: 0.01131582260131836
+--------------------------
+
+Supply Nodes: 115
+Demand Nodes: 77
+Maximum Cost: 13659
+Maximum Amount: 1319
+Solver's objective value is: 18203020.0
+Time taken by Solver: 0.10654687881469727
+Revised Simplex Method's Optimal Value is: 18203020.0
+Time taken by Revised Simplex Method: 0.4735081195831299
+--------------------------
+
+Supply Nodes: 12
+Demand Nodes: 149
+Maximum Cost: 13259
+Maximum Amount: 545
+Solver's objective value is: 4221063.0
+Time taken by Solver: 0.0342710018157959
+Revised Simplex Method's Optimal Value is: 4221063.0
+Time taken by Revised Simplex Method: 0.0974893569946289
+--------------------------
+
+Supply Nodes: 45
+Demand Nodes: 97
+Maximum Cost: 4370
+Maximum Amount: 243
+Solver's objective value is: 907701.0
+Time taken by Solver: 0.05736207962036133
+Revised Simplex Method's Optimal Value is: 907701.0
+Time taken by Revised Simplex Method: 0.1715409755706787
+--------------------------
+
+Supply Nodes: 43
+Demand Nodes: 11
+Maximum Cost: 5536
+Maximum Amount: 1572
+Solver's objective value is: 6288730.0
+Time taken by Solver: 0.020203113555908203
+Revised Simplex Method's Optimal Value is: 6288730.0
+Time taken by Revised Simplex Method: 0.007175922393798828
+--------------------------
+
+Supply Nodes: 48
+Demand Nodes: 123
+Maximum Cost: 3640
+Maximum Amount: 1065
+Solver's objective value is: 3129891.0
+Time taken by Solver: 0.07358694076538086
+Revised Simplex Method's Optimal Value is: 3129891.0
+Time taken by Revised Simplex Method: 0.35517287254333496
+--------------------------
+
+Supply Nodes: 22
+Demand Nodes: 87
+Maximum Cost: 9444
+Maximum Amount: 1729
+Solver's objective value is: 11077121.0
+Time taken by Solver: 0.03544020652770996
+Revised Simplex Method's Optimal Value is: 11077121.0
+Time taken by Revised Simplex Method: 0.051338911056518555
+--------------------------
+
+Supply Nodes: 149
+Demand Nodes: 99
+Maximum Cost: 17956
+Maximum Amount: 325
+Solver's objective value is: 6357072.0
+Time taken by Solver: 0.16369295120239258
+Revised Simplex Method's Optimal Value is: 6357072.0
+Time taken by Revised Simplex Method: 2.4282898902893066
+--------------------------
+
+Supply Nodes: 107
+Demand Nodes: 23
+Maximum Cost: 4135
+Maximum Amount: 255
+Solver's objective value is: 772483.0
+Time taken by Solver: 0.04127693176269531
+Revised Simplex Method's Optimal Value is: 772483.0
+Time taken by Revised Simplex Method: 0.08693814277648926
+--------------------------
+
+Supply Nodes: 36
+Demand Nodes: 15
+Maximum Cost: 9852
+Maximum Amount: 249
+Solver's objective value is: 2099395.0
+Time taken by Solver: 0.020762920379638672
+Revised Simplex Method's Optimal Value is: 2099395.0
+Time taken by Revised Simplex Method: 0.0074787139892578125
+--------------------------
+
+Supply Nodes: 59
+Demand Nodes: 96
+Maximum Cost: 8253
+Maximum Amount: 579
+Solver's objective value is: 4346227.0
+Time taken by Solver: 0.0708780288696289
+Revised Simplex Method's Optimal Value is: 4346227.0
+Time taken by Revised Simplex Method: 0.2572150230407715
+--------------------------
+
+Supply Nodes: 29
+Demand Nodes: 32
+Maximum Cost: 17473
+Maximum Amount: 1325
+Solver's objective value is: 25719464.0
+Time taken by Solver: 0.025127887725830078
+Revised Simplex Method's Optimal Value is: 25719464.0
+Time taken by Revised Simplex Method: 0.013182878494262695
+--------------------------
+
+Supply Nodes: 97
+Demand Nodes: 125
+Maximum Cost: 17010
+Maximum Amount: 764
+Solver's objective value is: 13581513.0
+Time taken by Solver: 0.13661718368530273
+Revised Simplex Method's Optimal Value is: 13581513.0
+Time taken by Revised Simplex Method: 1.4163610935211182
+--------------------------
+
+Supply Nodes: 80
+Demand Nodes: 16
+Maximum Cost: 8174
+Maximum Amount: 1619
+Solver's objective value is: 8357659.0
+Time taken by Solver: 0.029664039611816406
+Revised Simplex Method's Optimal Value is: 8357659.0
+Time taken by Revised Simplex Method: 0.0602719783782959
+--------------------------
+
+Supply Nodes: 31
+Demand Nodes: 58
+Maximum Cost: 16505
+Maximum Amount: 566
+Solver's objective value is: 8392981.0
+Time taken by Solver: 0.03395199775695801
+Revised Simplex Method's Optimal Value is: 8392981.0
+Time taken by Revised Simplex Method: 0.03221416473388672
+--------------------------
+
+Supply Nodes: 96
+Demand Nodes: 24
+Maximum Cost: 15084
+Maximum Amount: 855
+Solver's objective value is: 7238005.0
+Time taken by Solver: 0.038847923278808594
+Revised Simplex Method's Optimal Value is: 7238005.0
+Time taken by Revised Simplex Method: 0.07014083862304688
+--------------------------
+
+Supply Nodes: 108
+Demand Nodes: 147
+Maximum Cost: 5068
+Maximum Amount: 371
+Solver's objective value is: 1954663.0
+Time taken by Solver: 0.17844200134277344
+Revised Simplex Method's Optimal Value is: 1954663.0
+Time taken by Revised Simplex Method: 2.621070146560669
+--------------------------
+
+Supply Nodes: 94
+Demand Nodes: 93
+Maximum Cost: 12925
+Maximum Amount: 249
+Solver's objective value is: 3168466.0
+Time taken by Solver: 0.10615396499633789
+Revised Simplex Method's Optimal Value is: 3168466.0
+Time taken by Revised Simplex Method: 0.44582700729370117
+--------------------------
+
+Supply Nodes: 30
+Demand Nodes: 87
+Maximum Cost: 1024
+Maximum Amount: 174
+Solver's objective value is: 134586.0
+Time taken by Solver: 0.04273104667663574
+Revised Simplex Method's Optimal Value is: 134586.0
+Time taken by Revised Simplex Method: 0.07332992553710938
+--------------------------
+
+Supply Nodes: 85
+Demand Nodes: 16
+Maximum Cost: 9206
+Maximum Amount: 951
+Solver's objective value is: 6957623.0
+Time taken by Solver: 0.030617952346801758
+Revised Simplex Method's Optimal Value is: 6957623.0
+Time taken by Revised Simplex Method: 0.03858804702758789
+--------------------------
+
+Supply Nodes: 113
+Demand Nodes: 133
+Maximum Cost: 7552
+Maximum Amount: 965
+Solver's objective value is: 7354465.0
+Time taken by Solver: 0.16917181015014648
+Revised Simplex Method's Optimal Value is: 7354465.0
+Time taken by Revised Simplex Method: 2.2216031551361084
+--------------------------
+
+Supply Nodes: 80
+Demand Nodes: 93
+Maximum Cost: 4565
+Maximum Amount: 1599
+Solver's objective value is: 8199438.0
+Time taken by Solver: 0.09013795852661133
+Revised Simplex Method's Optimal Value is: 8199438.0
+Time taken by Revised Simplex Method: 0.3334200382232666
+--------------------------
+
+Supply Nodes: 52
+Demand Nodes: 91
+Maximum Cost: 14662
+Maximum Amount: 244
+Solver's objective value is: 3200271.0
+Time taken by Solver: 0.06804299354553223
+Revised Simplex Method's Optimal Value is: 3200271.0
+Time taken by Revised Simplex Method: 0.17750811576843262
+--------------------------
+
+Supply Nodes: 88
+Demand Nodes: 10
+Maximum Cost: 19920
+Maximum Amount: 608
+Solver's objective value is: 7284327.0
+Time taken by Solver: 0.025439977645874023
+Revised Simplex Method's Optimal Value is: 7284327.0
+Time taken by Revised Simplex Method: 0.02653789520263672
+--------------------------
+
+Supply Nodes: 107
+Demand Nodes: 140
+Maximum Cost: 8137
+Maximum Amount: 440
+Solver's objective value is: 3427335.0
+Time taken by Solver: 0.17242693901062012
+Revised Simplex Method's Optimal Value is: 3427335.0
+Time taken by Revised Simplex Method: 2.1621928215026855
+--------------------------
+
+Supply Nodes: 18
+Demand Nodes: 130
+Maximum Cost: 14457
+Maximum Amount: 1664
+Solver's objective value is: 17123977.0
+Time taken by Solver: 0.0417630672454834
+Revised Simplex Method's Optimal Value is: 17123977.0
+Time taken by Revised Simplex Method: 0.1134040355682373
+--------------------------
+
+Supply Nodes: 110
+Demand Nodes: 50
+Maximum Cost: 2508
+Maximum Amount: 1993
+Solver's objective value is: 4197657.0
+Time taken by Solver: 0.07268881797790527
+Revised Simplex Method's Optimal Value is: 4197657.0
+Time taken by Revised Simplex Method: 0.2894251346588135
+--------------------------
+
+Supply Nodes: 109
+Demand Nodes: 47
+Maximum Cost: 8529
+Maximum Amount: 1697
+Solver's objective value is: 10320596.0
+Time taken by Solver: 0.06880903244018555
+Revised Simplex Method's Optimal Value is: 10320596.0
+Time taken by Revised Simplex Method: 0.1959691047668457
+--------------------------
+
+Supply Nodes: 100
+Demand Nodes: 35
+Maximum Cost: 3509
+Maximum Amount: 1588
+Solver's objective value is: 4145192.0
+Time taken by Solver: 0.05165505409240723
+Revised Simplex Method's Optimal Value is: 4145192.0
+Time taken by Revised Simplex Method: 0.11284017562866211
+--------------------------
+
+Supply Nodes: 118
+Demand Nodes: 30
+Maximum Cost: 9819
+Maximum Amount: 1239
+Solver's objective value is: 7944118.0
+Time taken by Solver: 0.05257701873779297
+Revised Simplex Method's Optimal Value is: 7944118.0
+Time taken by Revised Simplex Method: 0.1430809497833252
+--------------------------
+
+Supply Nodes: 58
+Demand Nodes: 23
+Maximum Cost: 1157
+Maximum Amount: 151
+Solver's objective value is: 144130.0
+Time taken by Solver: 0.030900001525878906
+Revised Simplex Method's Optimal Value is: 144130.0
+Time taken by Revised Simplex Method: 0.024889230728149414
+--------------------------
+
+Supply Nodes: 15
+Demand Nodes: 20
+Maximum Cost: 9924
+Maximum Amount: 1736
+Solver's objective value is: 13575813.0
+Time taken by Solver: 0.018178224563598633
+Revised Simplex Method's Optimal Value is: 13575813.0
+Time taken by Revised Simplex Method: 0.0032808780670166016
+--------------------------
+
+Supply Nodes: 138
+Demand Nodes: 105
+Maximum Cost: 17962
+Maximum Amount: 544
+Solver's objective value is: 8438417.0
+Time taken by Solver: 0.16669225692749023
+Revised Simplex Method's Optimal Value is: 8438417.0
+Time taken by Revised Simplex Method: 1.957756757736206
+--------------------------
+
+Supply Nodes: 108
+Demand Nodes: 41
+Maximum Cost: 7195
+Maximum Amount: 1065
+Solver's objective value is: 6237101.0
+Time taken by Solver: 0.062422990798950195
+Revised Simplex Method's Optimal Value is: 6237101.0
+Time taken by Revised Simplex Method: 0.1721029281616211
+--------------------------
+
+Supply Nodes: 148
+Demand Nodes: 122
+Maximum Cost: 4040
+Maximum Amount: 1860
+Solver's objective value is: 8609594.0
+Time taken by Solver: 0.209061861038208
+Revised Simplex Method's Optimal Value is: 8609594.0
+Time taken by Revised Simplex Method: 3.5212039947509766
+--------------------------
+
+Supply Nodes: 147
+Demand Nodes: 52
+Maximum Cost: 18160
+Maximum Amount: 449
+Solver's objective value is: 6765887.0
+Time taken by Solver: 0.09548425674438477
+Revised Simplex Method's Optimal Value is: 6765887.0
+Time taken by Revised Simplex Method: 0.5080709457397461
+--------------------------
+
+Supply Nodes: 134
+Demand Nodes: 79
+Maximum Cost: 3117
+Maximum Amount: 1870
+Solver's objective value is: 5891276.0
+Time taken by Solver: 0.12466287612915039
+Revised Simplex Method's Optimal Value is: 5891276.0
+Time taken by Revised Simplex Method: 1.1136751174926758
+--------------------------
+
+Supply Nodes: 119
+Demand Nodes: 72
+Maximum Cost: 7206
+Maximum Amount: 1543
+Solver's objective value is: 10912228.0
+Time taken by Solver: 0.10441184043884277
+Revised Simplex Method's Optimal Value is: 10912228.0
+Time taken by Revised Simplex Method: 0.5456387996673584
+--------------------------
+
+Supply Nodes: 108
+Demand Nodes: 55
+Maximum Cost: 11337
+Maximum Amount: 613
+Solver's objective value is: 6087273.0
+Time taken by Solver: 0.07729935646057129
+Revised Simplex Method's Optimal Value is: 6087273.0
+Time taken by Revised Simplex Method: 0.32386302947998047
+--------------------------
+
+Supply Nodes: 23
+Demand Nodes: 93
+Maximum Cost: 8941
+Maximum Amount: 1143
+Solver's objective value is: 6683249.0
+Time taken by Solver: 0.03854012489318848
+Revised Simplex Method's Optimal Value is: 6683249.0
+Time taken by Revised Simplex Method: 0.056192874908447266
+--------------------------
+
+Supply Nodes: 121
+Demand Nodes: 14
+Maximum Cost: 11789
+Maximum Amount: 603
+Solver's objective value is: 4208707.0
+Time taken by Solver: 0.03380775451660156
+Revised Simplex Method's Optimal Value is: 4208707.0
+Time taken by Revised Simplex Method: 0.07231926918029785
+--------------------------
+
+Supply Nodes: 61
+Demand Nodes: 62
+Maximum Cost: 15909
+Maximum Amount: 1017
+Solver's objective value is: 16260424.0
+Time taken by Solver: 0.05491304397583008
+Revised Simplex Method's Optimal Value is: 16260424.0
+Time taken by Revised Simplex Method: 0.1051478385925293
+--------------------------
+
+Supply Nodes: 71
+Demand Nodes: 34
+Maximum Cost: 18700
+Maximum Amount: 961
+Solver's objective value is: 17300018.0
+Time taken by Solver: 0.04080390930175781
+Revised Simplex Method's Optimal Value is: 17300018.0
+Time taken by Revised Simplex Method: 0.052980899810791016
+--------------------------
+
+Supply Nodes: 93
+Demand Nodes: 116
+Maximum Cost: 12116
+Maximum Amount: 1854
+Solver's objective value is: 20555610.0
+Time taken by Solver: 0.12922191619873047
+Revised Simplex Method's Optimal Value is: 20555610.0
+Time taken by Revised Simplex Method: 1.107450246810913
+--------------------------
+
+Supply Nodes: 147
+Demand Nodes: 85
+Maximum Cost: 1115
+Maximum Amount: 1677
+Solver's objective value is: 1814131.0
+Time taken by Solver: 0.15439796447753906
+Revised Simplex Method's Optimal Value is: 1814131.0
+Time taken by Revised Simplex Method: 1.727545976638794
+--------------------------
+
+Supply Nodes: 32
+Demand Nodes: 87
+Maximum Cost: 10053
+Maximum Amount: 583
+Solver's objective value is: 5768006.0
+Time taken by Solver: 0.04445481300354004
+Revised Simplex Method's Optimal Value is: 5768006.0
+Time taken by Revised Simplex Method: 0.08654904365539551
+--------------------------
+
+Supply Nodes: 62
+Demand Nodes: 97
+Maximum Cost: 13033
+Maximum Amount: 1812
+Solver's objective value is: 18873059.0
+Time taken by Solver: 0.07970404624938965
+Revised Simplex Method's Optimal Value is: 18873059.0
+Time taken by Revised Simplex Method: 0.2977428436279297
+--------------------------
+
+Supply Nodes: 82
+Demand Nodes: 122
+Maximum Cost: 19350
+Maximum Amount: 195
+Solver's objective value is: 3438887.0
+Time taken by Solver: 0.11958813667297363
+Revised Simplex Method's Optimal Value is: 3438887.0
+Time taken by Revised Simplex Method: 0.9601240158081055
+--------------------------
+
+Supply Nodes: 42
+Demand Nodes: 73
+Maximum Cost: 14321
+Maximum Amount: 981
+Solver's objective value is: 11048558.0
+Time taken by Solver: 0.04748797416687012
+Revised Simplex Method's Optimal Value is: 11048558.0
+Time taken by Revised Simplex Method: 0.08461809158325195
+--------------------------
+
+Supply Nodes: 138
+Demand Nodes: 90
+Maximum Cost: 7761
+Maximum Amount: 1618
+Solver's objective value is: 11509328.0
+Time taken by Solver: 0.1436457633972168
+Revised Simplex Method's Optimal Value is: 11509328.0
+Time taken by Revised Simplex Method: 1.537365198135376
+--------------------------
+
+Supply Nodes: 111
+Demand Nodes: 146
+Maximum Cost: 4969
+Maximum Amount: 351
+Solver's objective value is: 1796462.0
+Time taken by Solver: 0.18529009819030762
+Revised Simplex Method's Optimal Value is: 1796462.0
+Time taken by Revised Simplex Method: 2.86649489402771
+--------------------------
+
+Supply Nodes: 43
+Demand Nodes: 52
+Maximum Cost: 7501
+Maximum Amount: 1823
+Solver's objective value is: 14143008.0
+Time taken by Solver: 0.03899884223937988
+Revised Simplex Method's Optimal Value is: 14143008.0
+Time taken by Revised Simplex Method: 0.04548001289367676
+--------------------------
+
+Supply Nodes: 21
+Demand Nodes: 58
+Maximum Cost: 18089
+Maximum Amount: 328
+Solver's objective value is: 4177435.0
+Time taken by Solver: 0.029695987701416016
+Revised Simplex Method's Optimal Value is: 4177435.0
+Time taken by Revised Simplex Method: 0.022655963897705078
+--------------------------
+
+Supply Nodes: 21
+Demand Nodes: 68
+Maximum Cost: 15163
+Maximum Amount: 1318
+Solver's objective value is: 12745930.0
+Time taken by Solver: 0.030746936798095703
+Revised Simplex Method's Optimal Value is: 12745930.0
+Time taken by Revised Simplex Method: 0.026875019073486328
+--------------------------
+
+Supply Nodes: 150
+Demand Nodes: 87
+Maximum Cost: 6764
+Maximum Amount: 1412
+Solver's objective value is: 8580534.0
+Time taken by Solver: 0.15195631980895996
+Revised Simplex Method's Optimal Value is: 8580534.0
+Time taken by Revised Simplex Method: 1.7729830741882324
+--------------------------
+
+Supply Nodes: 67
+Demand Nodes: 142
+Maximum Cost: 7866
+Maximum Amount: 902
+Solver's objective value is: 5768742.0
+Time taken by Solver: 0.11586403846740723
+Revised Simplex Method's Optimal Value is: 5768742.0
+Time taken by Revised Simplex Method: 0.974754810333252
+--------------------------
+
+Supply Nodes: 91
+Demand Nodes: 107
+Maximum Cost: 12941
+Maximum Amount: 1084
+Solver's objective value is: 13839462.0
+Time taken by Solver: 0.11713600158691406
+Revised Simplex Method's Optimal Value is: 13839462.0
+Time taken by Revised Simplex Method: 0.8838839530944824
+--------------------------
+
+Supply Nodes: 36
+Demand Nodes: 148
+Maximum Cost: 18276
+Maximum Amount: 1119
+Solver's objective value is: 14895332.0
+Time taken by Solver: 0.07224392890930176
+Revised Simplex Method's Optimal Value is: 14895332.0
+Time taken by Revised Simplex Method: 0.3291630744934082
+--------------------------
+
+Supply Nodes: 96
+Demand Nodes: 31
+Maximum Cost: 5917
+Maximum Amount: 1945
+Solver's objective value is: 8328856.0
+Time taken by Solver: 0.04830312728881836
+Revised Simplex Method's Optimal Value is: 8328856.0
+Time taken by Revised Simplex Method: 0.0905909538269043
+--------------------------
+
+Supply Nodes: 111
+Demand Nodes: 81
+Maximum Cost: 12940
+Maximum Amount: 1806
+Solver's objective value is: 22055123.0
+Time taken by Solver: 0.10988998413085938
+Revised Simplex Method's Optimal Value is: 22055123.0
+Time taken by Revised Simplex Method: 0.7059447765350342
+--------------------------
+
+Supply Nodes: 57
+Demand Nodes: 46
+Maximum Cost: 8735
+Maximum Amount: 570
+Solver's objective value is: 4847137.0
+Time taken by Solver: 0.04378509521484375
+Revised Simplex Method's Optimal Value is: 4847137.0
+Time taken by Revised Simplex Method: 0.059886932373046875
+--------------------------
+
+Supply Nodes: 118
+Demand Nodes: 32
+Maximum Cost: 9890
+Maximum Amount: 1718
+Solver's objective value is: 10992366.0
+Time taken by Solver: 0.055505990982055664
+Revised Simplex Method's Optimal Value is: 10992366.0
+Time taken by Revised Simplex Method: 0.17175912857055664
+--------------------------
+
+Supply Nodes: 68
+Demand Nodes: 37
+Maximum Cost: 13651
+Maximum Amount: 1611
+Solver's objective value is: 25162728.0
+Time taken by Solver: 0.04343891143798828
+Revised Simplex Method's Optimal Value is: 25162728.0
+Time taken by Revised Simplex Method: 0.06592988967895508
+--------------------------
+
+Supply Nodes: 49
+Demand Nodes: 38
+Maximum Cost: 11255
+Maximum Amount: 192
+Solver's objective value is: 2380921.0
+Time taken by Solver: 0.03458881378173828
+Revised Simplex Method's Optimal Value is: 2380921.0
+Time taken by Revised Simplex Method: 0.026217222213745117
+--------------------------
+
+Supply Nodes: 71
+Demand Nodes: 119
+Maximum Cost: 14799
+Maximum Amount: 954
+Solver's objective value is: 12714810.0
+Time taken by Solver: 0.10358214378356934
+Revised Simplex Method's Optimal Value is: 12714810.0
+Time taken by Revised Simplex Method: 0.4695701599121094
+--------------------------
+
+Supply Nodes: 60
+Demand Nodes: 109
+Maximum Cost: 5551
+Maximum Amount: 1200
+Solver's objective value is: 5540374.0
+Time taken by Solver: 0.08367085456848145
+Revised Simplex Method's Optimal Value is: 5540374.0
+Time taken by Revised Simplex Method: 0.2822999954223633
+--------------------------
+
+Supply Nodes: 28
+Demand Nodes: 137
+Maximum Cost: 8500
+Maximum Amount: 968
+Solver's objective value is: 7265819.0
+Time taken by Solver: 0.05806899070739746
+Revised Simplex Method's Optimal Value is: 7265819.0
+Time taken by Revised Simplex Method: 0.19048595428466797
+--------------------------
+
+Supply Nodes: 51
+Demand Nodes: 86
+Maximum Cost: 4141
+Maximum Amount: 469
+Solver's objective value is: 1883426.0
+Time taken by Solver: 0.06097102165222168
+Revised Simplex Method's Optimal Value is: 1883426.0
+Time taken by Revised Simplex Method: 0.1705610752105713
+--------------------------
+
+Supply Nodes: 135
+Demand Nodes: 149
+Maximum Cost: 7766
+Maximum Amount: 1929
+Solver's objective value is: 15412209.0
+Time taken by Solver: 0.24280500411987305
+Revised Simplex Method's Optimal Value is: 15412209.0
+Time taken by Revised Simplex Method: 4.376901865005493
+--------------------------
+
+Supply Nodes: 137
+Demand Nodes: 50
+Maximum Cost: 11668
+Maximum Amount: 1768
+Solver's objective value is: 19281970.0
+Time taken by Solver: 0.09091711044311523
+Revised Simplex Method's Optimal Value is: 19281970.0
+Time taken by Revised Simplex Method: 0.38248181343078613
+--------------------------
+
+Supply Nodes: 108
+Demand Nodes: 95
+Maximum Cost: 17176
+Maximum Amount: 250
+Solver's objective value is: 4487213.0
+Time taken by Solver: 0.12188577651977539
+Revised Simplex Method's Optimal Value is: 4487213.0
+Time taken by Revised Simplex Method: 0.9518358707427979
+--------------------------
+
+Supply Nodes: 32
+Demand Nodes: 39
+Maximum Cost: 17394
+Maximum Amount: 440
+Solver's objective value is: 8272238.0
+Time taken by Solver: 0.029484033584594727
+Revised Simplex Method's Optimal Value is: 8272238.0
+Time taken by Revised Simplex Method: 0.020584821701049805
+--------------------------
+
+Supply Nodes: 100
+Demand Nodes: 32
+Maximum Cost: 12105
+Maximum Amount: 1869
+Solver's objective value is: 15338028.0
+Time taken by Solver: 0.04999113082885742
+Revised Simplex Method's Optimal Value is: 15338028.0
+Time taken by Revised Simplex Method: 0.10753297805786133
+--------------------------
+
+Supply Nodes: 126
+Demand Nodes: 145
+Maximum Cost: 16483
+Maximum Amount: 343
+Solver's objective value is: 6210972.0
+Time taken by Solver: 0.2099471092224121
+Revised Simplex Method's Optimal Value is: 6210972.0
+Time taken by Revised Simplex Method: 3.5730040073394775
+--------------------------
+
+Supply Nodes: 133
+Demand Nodes: 57
+Maximum Cost: 10641
+Maximum Amount: 781
+Solver's objective value is: 7008925.0
+Time taken by Solver: 0.09476113319396973
+Revised Simplex Method's Optimal Value is: 7008925.0
+Time taken by Revised Simplex Method: 0.4031062126159668
+--------------------------
+
+Supply Nodes: 67
+Demand Nodes: 117
+Maximum Cost: 13736
+Maximum Amount: 786
+Solver's objective value is: 12855946.0
+Time taken by Solver: 0.09888505935668945
+Revised Simplex Method's Optimal Value is: 12855946.0
+Time taken by Revised Simplex Method: 0.4417400360107422
+--------------------------
+
+Supply Nodes: 50
+Demand Nodes: 97
+Maximum Cost: 8505
+Maximum Amount: 141
+Solver's objective value is: 1133589.0
+Time taken by Solver: 0.06693887710571289
+Revised Simplex Method's Optimal Value is: 1133589.0
+Time taken by Revised Simplex Method: 0.19685125350952148
+--------------------------
+
+Supply Nodes: 107
+Demand Nodes: 122
+Maximum Cost: 6478
+Maximum Amount: 636
+Solver's objective value is: 4282898.0
+Time taken by Solver: 0.15201687812805176
+Revised Simplex Method's Optimal Value is: 4282898.0
+Time taken by Revised Simplex Method: 1.6251869201660156
+--------------------------
+
+Supply Nodes: 117
+Demand Nodes: 134
+Maximum Cost: 13493
+Maximum Amount: 651
+Solver's objective value is: 9198540.0
+Time taken by Solver: 0.17835402488708496
+Revised Simplex Method's Optimal Value is: 9198540.0
+Time taken by Revised Simplex Method: 2.9148731231689453
+--------------------------
+
+Supply Nodes: 16
+Demand Nodes: 130
+Maximum Cost: 4819
+Maximum Amount: 1641
+Solver's objective value is: 5917938.0
+Time taken by Solver: 0.03909897804260254
+Revised Simplex Method's Optimal Value is: 5917938.0
+Time taken by Revised Simplex Method: 0.09644007682800293
+--------------------------
+
+Supply Nodes: 30
+Demand Nodes: 40
+Maximum Cost: 5431
+Maximum Amount: 732
+Solver's objective value is: 3817303.0
+Time taken by Solver: 0.028942108154296875
+Revised Simplex Method's Optimal Value is: 3817303.0
+Time taken by Revised Simplex Method: 0.018558979034423828
+--------------------------
+
+Supply Nodes: 57
+Demand Nodes: 85
+Maximum Cost: 11729
+Maximum Amount: 648
+Solver's objective value is: 6702780.0
+Time taken by Solver: 0.06937170028686523
+Revised Simplex Method's Optimal Value is: 6702780.0
+Time taken by Revised Simplex Method: 0.20369291305541992
+--------------------------
+
+Supply Nodes: 60
+Demand Nodes: 14
+Maximum Cost: 7773
+Maximum Amount: 1455
+Solver's objective value is: 8390050.0
+Time taken by Solver: 0.02509903907775879
+Revised Simplex Method's Optimal Value is: 8390050.0
+Time taken by Revised Simplex Method: 0.017139911651611328
+--------------------------
+
+Supply Nodes: 128
+Demand Nodes: 39
+Maximum Cost: 5199
+Maximum Amount: 213
+Solver's objective value is: 897630.0
+Time taken by Solver: 0.06966018676757812
+Revised Simplex Method's Optimal Value is: 897630.0
+Time taken by Revised Simplex Method: 0.2685372829437256
+--------------------------
+
+Supply Nodes: 147
+Demand Nodes: 10
+Maximum Cost: 10137
+Maximum Amount: 1414
+Solver's objective value is: 9166747.0
+Time taken by Solver: 0.03312993049621582
+Revised Simplex Method's Optimal Value is: 9166747.0
+Time taken by Revised Simplex Method: 0.08380317687988281
+--------------------------
+
+Supply Nodes: 90
+Demand Nodes: 64
+Maximum Cost: 18115
+Maximum Amount: 1541
+Solver's objective value is: 33658630.0
+Time taken by Solver: 0.07505679130554199
+Revised Simplex Method's Optimal Value is: 33658630.0
+Time taken by Revised Simplex Method: 0.28395795822143555
+--------------------------
+
+Supply Nodes: 50
+Demand Nodes: 137
+Maximum Cost: 4910
+Maximum Amount: 294
+Solver's objective value is: 1213428.0
+Time taken by Solver: 0.08666706085205078
+Revised Simplex Method's Optimal Value is: 1213428.0
+Time taken by Revised Simplex Method: 0.36684703826904297
+--------------------------
+
+Supply Nodes: 101
+Demand Nodes: 114
+Maximum Cost: 17730
+Maximum Amount: 1906
+Solver's objective value is: 37852387.0
+Time taken by Solver: 0.13716697692871094
+Revised Simplex Method's Optimal Value is: 37852387.0
+Time taken by Revised Simplex Method: 1.425386905670166
+--------------------------
+
+Supply Nodes: 26
+Demand Nodes: 137
+Maximum Cost: 2200
+Maximum Amount: 291
+Solver's objective value is: 544541.0
+Time taken by Solver: 0.05546307563781738
+Revised Simplex Method's Optimal Value is: 544541.0
+Time taken by Revised Simplex Method: 0.16286110877990723
+--------------------------
+
+Supply Nodes: 140
+Demand Nodes: 21
+Maximum Cost: 3931
+Maximum Amount: 1894
+Solver's objective value is: 5067516.0
+Time taken by Solver: 0.04861807823181152
+Revised Simplex Method's Optimal Value is: 5067516.0
+Time taken by Revised Simplex Method: 0.1494431495666504
+--------------------------
+
+Supply Nodes: 145
+Demand Nodes: 38
+Maximum Cost: 10210
+Maximum Amount: 1465
+Solver's objective value is: 13401207.0
+Time taken by Solver: 0.07415509223937988
+Revised Simplex Method's Optimal Value is: 13401207.0
+Time taken by Revised Simplex Method: 0.37581491470336914
+--------------------------
+
+Supply Nodes: 20
+Demand Nodes: 32
+Maximum Cost: 2274
+Maximum Amount: 1551
+Solver's objective value is: 3037387.0
+Time taken by Solver: 0.022946834564208984
+Revised Simplex Method's Optimal Value is: 3037387.0
+Time taken by Revised Simplex Method: 0.010387897491455078
+--------------------------
+
+Supply Nodes: 64
+Demand Nodes: 59
+Maximum Cost: 12760
+Maximum Amount: 1023
+Solver's objective value is: 15653849.0
+Time taken by Solver: 0.05380511283874512
+Revised Simplex Method's Optimal Value is: 15653849.0
+Time taken by Revised Simplex Method: 0.10693526268005371
+--------------------------
+
+Supply Nodes: 118
+Demand Nodes: 32
+Maximum Cost: 1733
+Maximum Amount: 997
+Solver's objective value is: 1389824.0
+Time taken by Solver: 0.05966377258300781
+Revised Simplex Method's Optimal Value is: 1389824.0
+Time taken by Revised Simplex Method: 0.1580970287322998
+--------------------------
+
+Supply Nodes: 131
+Demand Nodes: 18
+Maximum Cost: 1672
+Maximum Amount: 140
+Solver's objective value is: 158137.0
+Time taken by Solver: 0.04223990440368652
+Revised Simplex Method's Optimal Value is: 158137.0
+Time taken by Revised Simplex Method: 0.1033930778503418
+--------------------------
+
+Supply Nodes: 39
+Demand Nodes: 143
+Maximum Cost: 17223
+Maximum Amount: 1341
+Solver's objective value is: 13865331.0
+Time taken by Solver: 0.07384705543518066
+Revised Simplex Method's Optimal Value is: 13865331.0
+Time taken by Revised Simplex Method: 0.3739311695098877
+--------------------------
+
+Supply Nodes: 135
+Demand Nodes: 71
+Maximum Cost: 1246
+Maximum Amount: 576
+Solver's objective value is: 615613.0
+Time taken by Solver: 0.11687302589416504
+Revised Simplex Method's Optimal Value is: 615613.0
+Time taken by Revised Simplex Method: 0.8942608833312988
+--------------------------
+
+Supply Nodes: 14
+Demand Nodes: 107
+Maximum Cost: 14779
+Maximum Amount: 1485
+Solver's objective value is: 15186444.0
+Time taken by Solver: 0.03266716003417969
+Revised Simplex Method's Optimal Value is: 15186444.0
+Time taken by Revised Simplex Method: 0.04678177833557129
+--------------------------
+
+Supply Nodes: 106
+Demand Nodes: 144
+Maximum Cost: 19277
+Maximum Amount: 158
+Solver's objective value is: 3073016.0
+Time taken by Solver: 0.17806100845336914
+Revised Simplex Method's Optimal Value is: 3073016.0
+Time taken by Revised Simplex Method: 2.409626007080078
+--------------------------
+
+Supply Nodes: 97
+Demand Nodes: 106
+Maximum Cost: 17225
+Maximum Amount: 1237
+Solver's objective value is: 20636424.0
+Time taken by Solver: 0.12273192405700684
+Revised Simplex Method's Optimal Value is: 20636424.0
+Time taken by Revised Simplex Method: 1.0202369689941406
+--------------------------
+

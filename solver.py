@@ -1,7 +1,7 @@
 from pulp import LpProblem, LpMinimize, LpVariable, lpSum, LpStatus, PULP_CBC_CMD
 import numpy as np
 import random
-
+import time
 
 M = 1e10
 
@@ -64,7 +64,7 @@ def solver(cost_matrix, supply_arr, demand_arr):
     status = model.solve(solver)
     
     # Print the optimal objective value
-    print(f"Objective Value: {model.objective.value()}")
+    print(f"Solver's Objective Value: {model.objective.value()}")
     
     # Print the values of the decision variables
     """for i in range(len(cost_matrix)):
@@ -172,9 +172,6 @@ def revised_simplex_method(c, A, b, problem="Max"):
     if two_phase:
         c_two_phase = c
         c, two_phase = check_artificial_variable(c)
-
-    if problem == "Min":
-        c = -c
     
 
     m, n = A.shape
@@ -187,12 +184,12 @@ def revised_simplex_method(c, A, b, problem="Max"):
     inv_base = np.linalg.inv(base_matrix)
     optimality_check = np.dot(np.transpose(base_cost), inv_base)
     optimality_check = np.dot(optimality_check, nonbase_matrix) - np.transpose(nonbase_cost)
-    while np.any(optimality_check < 0):
+    while np.any(optimality_check < -1e-10):
         j = np.argmin(optimality_check)
         d = np.dot(inv_base, nonbase_matrix[:, j])
 
         rhs = np.dot(inv_base, b)
-        if np.all(d <= 1e-10):
+        if np.all(d <= 0):
             return "Unbounded"
         else:
             theta = 1e10
@@ -240,7 +237,11 @@ def revised_simplex_method(c, A, b, problem="Max"):
         c = c_two_phase
         revised_simplex_method(c, A, b)
 
-    return optimal_value, x
+    
+    if problem == "Max":
+        return optimal_value, x
+    else:
+        return -optimal_value, x
 
 
 
@@ -303,7 +304,27 @@ def test_convert_random_instance_to_lp():
     print(A)
     print(b)
 
-
-cost_matrix, supply_arr, demand_arr = random_instance(120, 120, 10000, 1000)
-print(solver(cost_matrix, supply_arr, demand_arr))
-print(revised_simplex_method(*convert_random_instance_to_lp(cost_matrix, supply_arr, demand_arr)))
+#create an output file
+output_file = open("output.txt", "w")
+for i in range(100):
+    supply_nodes = random.randint(10, 150)
+    demand_nodes = random.randint(10, 150)
+    maximum_cost = random.randint(500, 20000)
+    maximum_amount = random.randint(100, 2000)
+    output_file.write(f"Supply Nodes: {supply_nodes}\n")
+    output_file.write(f"Demand Nodes: {demand_nodes}\n")
+    output_file.write(f"Maximum Cost: {maximum_cost}\n")
+    output_file.write(f"Maximum Amount: {maximum_amount}\n")
+    cost_matrix, supply_arr, demand_arr = random_instance(supply_nodes, demand_nodes, maximum_cost, maximum_amount)
+    time_start = time.time()
+    objective_solver = solver(cost_matrix, supply_arr, demand_arr)
+    time_end = time.time()
+    output_file.write(f"Solver's objective value is: {objective_solver}\n")
+    output_file.write(f"Time taken by Solver: {time_end - time_start}\n")
+    c, A, b = convert_random_instance_to_lp(cost_matrix, supply_arr, demand_arr)
+    time_start = time.time()
+    optimal_value, x = revised_simplex_method(c, A, b, "Min")
+    time_end = time.time()
+    output_file.write(f"Revised Simplex Method's Optimal Value is: {optimal_value}\n")
+    output_file.write(f"Time taken by Revised Simplex Method: {time_end - time_start}\n")
+    output_file.write("--------------------------\n\n")
